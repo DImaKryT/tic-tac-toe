@@ -167,22 +167,22 @@ int main() {
 		cout << "Step first gamer " << endl;
 		int a;
 		cin >> a;
-		gameStep(a, 'X');
+		gameStep(a, '0');
 		system("cls");
 		printArr();
 		cout << endl << endl;
-		if (checkWin('X')) {
+		if (checkWin('0')) {
 			cout << "first gammer win";
 			break;
 		}
 
 		cout << "Step second gamer " << endl;
 		cin >> a;
-		gameStep(a, '0');
+		gameStep(a, 'X');
 		system("cls");
 		printArr();
 		cout << endl << endl;
-		if (checkWin('0')) {
+		if (checkWin('X')) {
 			cout << "second gammer win";
 			break;
 		}
